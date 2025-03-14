@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
+    <meta name="description" content="A fun and interactive Tic-Tac-Toe game with animations and score tracking">
+</head>
+<body>
+    <div class="container">
+        <!-- title -->
+        <h1>Tic-Tac-Toe</h1>
+        
+        <!-- Scoreboard to track X and O scores -->
+        <div class="scoreboard">
+            <div class="player-score">
+                <span class="player-x">Player X</span>
+                <span class="score" id="scoreX">0</span>
+            </div>
+            <div class="score-divider">-</div>
+            <div class="player-score">
+                <span class="player-o">Player O</span>
+                <span class="score" id="scoreO">0</span>
+            </div>
+        </div>
+        
+        <!-- Game board with 9 cells -->
+        <div class="game-board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+
+        <div class="controls-section">
+            <!-- Game status message -->
+            <div id="status" class="status">Player X's turn</div>
+            
+            <!-- Restart game button -->
+            <button id="restartButton">Restart Game</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
